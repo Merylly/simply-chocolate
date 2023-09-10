@@ -1,0 +1,338 @@
+:root {
+  --c-black: #111;
+  --c-white: #fff;
+  --c-dark: #1e1823;
+  --c-white-tr: #ffffffb3;
+  --c-brand: #fd9222;
+  --c-brand-act: #fcf1e0;
+}
+
+body {
+  font-family: "Montserrat" sans-serif;
+  color: var(--c-black);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 32px;
+  margin: 0 auto;
+}
+
+/* header */
+.header {
+  padding-bottom: 8px;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.header-nav {
+  display: flex;
+  gap: 24px;
+  flex-grow: 1;
+}
+
+.nav-list {
+  display: flex;
+  gap: 24px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.social-links {
+  display: flex;
+  gap: 18px;
+}
+
+.logo {
+  align-items: center;
+  display: flex;
+  gap: 4px;
+  color: inherit;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1.11em;
+  letter-spacing: 0.03rem;
+  text-transform: uppercase;
+}
+
+.logo-accent {
+  font-style: normal;
+}
+
+.header-nav-link {
+  display: inline-block;
+  padding: 24px 0;
+  color: inherit;
+  font-weight: 500;
+  line-height: 1.14em;
+  letter-spacing: 0.02rem;
+}
+
+.header-nav-link:hover,
+.header-nav-link:focus {
+  color: var(--c-brand);
+}
+/* end header */
+
+/* hero section */
+.hero-section {
+  padding-bottom: 72px;
+}
+
+.hero-inner {
+  background-color: var(--c-dark);
+  padding: 381px 40px 40px;
+  border-radius: 30px;
+}
+
+.hero-title {
+  max-width: 484px;
+  color: var(--c-white);
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.21em;
+  letter-spacing: 0.03rem;
+  margin-bottom: 32px;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.button-primary {
+  background-color: var(--c-brand);
+  color: var(--c-white);
+  font-family: "Montserrat" sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 14px 40px;
+  border: none;
+  border-radius: 100px;
+}
+
+.button-primary:hover,
+.button-primary:focus {
+  color: var(--c-brand);
+  background-color: var(--c-brand-act);
+}
+
+.button-secondary {
+  color: var(--c-white);
+  font-weight: 600;
+  border: 1px solid var(--c-white);
+  padding: 14px 40px;
+  border-radius: 100px;
+}
+
+.button-secondary:hover,
+.button-secondary:focus {
+  color: var(--c-brand);
+  border: 1px solid var(--c-brand);
+}
+
+.scroll-down {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: var(--c-white);
+  font-weight: 500;
+  line-height: 1.28em;
+  letter-spacing: 0.03rem;
+  margin-left: auto;
+}
+/* end hero section */
+
+/* advantages section */
+.advantages-section {
+  background-color: var(--c-dark);
+  padding: 50px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.advantages-list {
+  display: flex;
+  gap: 70px;
+}
+
+.advantages-item:not(:last-child) {
+  padding-right: 18px;
+  border-right: 1px solid var(--c-white-tr);
+}
+
+.advantage-icon {
+  margin-bottom: 22px;
+  border: 1px solid var(--c-white-tr);
+  border-radius: 100px;
+}
+
+.advantages-title {
+  color: var(--c-white);
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.advantages-text {
+  color: var(--c-white-tr);
+  letter-spacing: 0.02rem;
+}
+/* end advantages section */
+
+/* ingredients section */
+.ingredients-section {
+  padding: 128px 0 64px;
+}
+
+.ingredients-title {
+  max-width: 411px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.16em;
+  letter-spacing: 0.03rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto 28px;
+}
+
+.ingredients-accent {
+  color: var(--c-brand);
+}
+
+.ingredients-text {
+  max-width: 486px;
+  line-height: 1.28em;
+  letter-spacing: 0.02rem;
+  text-align: center;
+  margin: 0 auto 50px;
+}
+
+.ingredient-list {
+  display: flex;
+  gap: 19px;
+}
+
+.ingredient-item {
+  flex-basis: calc((100%-57px) / 4);
+  border-radius: 15px;
+  padding: 28px 36px 28px 28px;
+}
+
+.ingredient-item:first-child {
+  background-color: var(--c-brand);
+}
+
+.ingredient-item:nth-child(2),
+.ingredient-item:nth-child(4) {
+  border: 1px solid var(--c-brand);
+}
+
+.ingredient-item:nth-child(3) {
+  background-color: var(--c-dark);
+}
+
+.ingredient-image {
+  margin-bottom: 36px;
+}
+
+.ingredient-text {
+  font-weight: 600;
+  line-height: 1.28em;
+  letter-spacing: 0.02rem;
+  text-transform: uppercase;
+}
+
+.accent {
+  color: var(--c-white);
+}
+/* end ingredients section */
+
+/* how its made section */
+.made-section {
+  padding: 64px 0;
+}
+
+.made-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.16em;
+  letter-spacing: 0.03rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.made-accent {
+  color: var(--c-brand);
+}
+
+.made-inner {
+  display: flex;
+  gap: 20px;
+}
+
+.content-title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33em;
+}
+
+.content-list {
+  list-style-type: disc;
+}
+
+.content-list-item {
+  line-height: 1.28em;
+  letter-spacing: 0.02rem;
+  margin-bottom: 24px;
+}
