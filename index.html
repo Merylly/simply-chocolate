@@ -29,10 +29,10 @@
             </a>
             <ul class="nav-list">
               <li>
-                <a class="header-nav-link" href="">Home</a>
+                <a class="header-nav-link" href="index.html">Home</a>
               </li>
               <li>
-                <a class="header-nav-link" href="">How it’s made?</a>
+                <a class="header-nav-link" href="#how-it-made-section">How it’s made?</a>
               </li>
               <li>
                 <a class="header-nav-link" href="">Our products</a>
@@ -60,6 +60,7 @@
         </div>
       </div>
     </header>
+
     <main>
       <!-- hero section -->
       <section class="hero-section">
@@ -71,7 +72,7 @@
             </h1>
             <div class="hero-actions">
               <button class="button-primary" type="button">Buy now</button>
-              <a class="button-secondary" href="">How it’s made</a>
+              <a class="button-secondary" href="#how-it-made-section">How it’s made</a>
               <a class="scroll-down" href=""
                 >scroll down
                 <div class="arrow-box">
@@ -84,6 +85,7 @@
           </div>
         </div>
       </section>
+
       <!-- our advantages section -->
       <section class="advantages-section">
         <div class="container">
@@ -135,6 +137,7 @@
           </ul>
         </div>
       </section>
+
       <!-- ingredients section -->
       <section class="ingredients-section">
         <div class="container">
@@ -158,6 +161,20 @@
                 height="160"
               />
               <p class="ingredient-text accent">milk chocolate</p>
+              <div class="ingredient-overlay">
+                <h3 class="ingredient-name">Milk chocolate</h3>
+                <div class="ingredient-flex">
+                  <p class="ingredient-accent-primary">chocolate</p>
+                  <p class="ingredient-accent-secondary">the benefits</p>
+                </div>
+                <p class="ingredient-description">
+                  Milk chocolate is a solid chocolate confectionery containing
+                  cocoa, sugar and milk. It is the most consumed type of
+                  chocolate. Chocolate was originally sold and consumed as a
+                  beverage in pre-Columbian times. Although four-fifths of all
+                  milk chocolate is sold in the United States and Europe.
+                </p>
+              </div>
             </li>
             <li class="ingredient-item">
               <img
@@ -168,6 +185,21 @@
                 height="160"
               />
               <p class="ingredient-text">milk</p>
+              <div class="ingredient-overlay">
+                <h3 class="ingredient-name">Milk</h3>
+                <div class="ingredient-flex">
+                  <p class="ingredient-accent-primary">milk</p>
+                  <p class="ingredient-accent-secondary">the benefits</p>
+                </div>
+                <p class="ingredient-description">
+                  Milk is a white liquid food produced by the mammary glands of
+                  mammals. It is the primary source of nutrition for young
+                  mammals (including breastfed human infants) before they are
+                  able to digest solid food.Early-lactation milk, which is
+                  called colostrum, contains antibodies that strengthen the
+                  immune system.
+                </p>
+              </div>
             </li>
             <li class="ingredient-item">
               <img
@@ -178,6 +210,21 @@
                 height="160"
               />
               <p class="ingredient-text accent">nuts</p>
+              <div class="ingredient-overlay">
+                <h3 class="ingredient-name">Nuts</h3>
+                <div class="ingredient-flex">
+                  <p class="ingredient-accent-primary">nuts</p>
+                  <p class="ingredient-accent-secondary">the benefits</p>
+                </div>
+                <p class="ingredient-description">
+                  Almonds, pistachios, and walnuts are some types of nuts that
+                  contain healthy nutrients. When eaten as part of a
+                  nutrient-dense diet, these 9 nuts may offer benefits such as
+                  reducing your risk of heart disease. They’re a good source of
+                  fiber, healthy fats, and plant protein. Plus, they’re great on
+                  their own.
+                </p>
+              </div>
             </li>
             <li class="ingredient-item">
               <img
@@ -188,33 +235,47 @@
                 height="160"
               />
               <p class="ingredient-text">semi-sweet chocolate</p>
+              <div class="ingredient-overlay">
+                <h3 class="ingredient-name">semi - sweet chocolate</h3>
+                <div class="ingredient-flex">
+                  <p class="ingredient-accent-primary">sweet chocolate</p>
+                  <p class="ingredient-accent-secondary">the benefits</p>
+                </div>
+                <p class="ingredient-description">
+                  Semi-sweet chocolate has a cocoa solid content of 35 to 65%.
+                  One of the best ways to gain an understanding of this type of
+                  chocolate is to compare it to a different type of chocolate.
+                  Semisweet is darker than milk chocolate. In a taste
+                  comparison, it has a slightly bitter taste whereas milk
+                  chocolate is sweeter and more mellow.
+                </p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
+
       <!-- how it's made section -->
-      <section class="made-section">
+      <section id="how-it-made-section" class="made-section">
         <div class="container">
           <h2 class="made-title">
             How it’s <span class="made-accent">made?</span>
           </h2>
           <div class="made-inner">
             <div class="made-video">
-              <img
-                src="./images/ingredients/video-preview.jpg"
+              <img class="video-preview"
+                src="./images/bg/video-bg.jpg"
                 alt="video preview"
                 width="600"
                 height="400"
               />
-              <button type="button">
-                <svg width="44" height="44">
-                  <use href="./images/icons/icons.svg#icon-play"></use>
-                </svg>
-              </button>
+              <svg class="video-button" width="44" height="44">
+                <use href="./images/icons/icons.svg#icon-play"></use>
+              </svg>
             </div>
             <div class="made-content">
               <h3 class="content-title">
-                Try our chocolates today and discover the perfect balance of
+                Try our chocolates today and <br> discover the perfect balance of
                 flavor
               </h3>
               <ul class="content-list">
