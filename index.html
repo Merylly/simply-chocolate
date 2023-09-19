@@ -32,16 +32,24 @@
                 <a class="header-nav-link" href="index.html">Home</a>
               </li>
               <li>
-                <a class="header-nav-link" href="#how-it-made-section">How it’s made?</a>
+                <a class="header-nav-link" href="#how-it-made-section"
+                  >How it’s made?</a
+                >
               </li>
               <li>
-                <a class="header-nav-link" href="">Our products</a>
+                <a class="header-nav-link" href="#our-products-section"
+                  >Our products</a
+                >
               </li>
               <li>
-                <a class="header-nav-link" href="">Top sellers</a>
+                <a class="header-nav-link" href="#top-sellers-section"
+                  >Top sellers</a
+                >
               </li>
               <li>
-                <a class="header-nav-link" href="">Chocolate is loved</a>
+                <a class="header-nav-link" href="#chocolate-is-loved-section"
+                  >Chocolate is loved</a
+                >
               </li>
             </ul>
           </nav>
@@ -72,8 +80,10 @@
             </h1>
             <div class="hero-actions">
               <button class="button-primary" type="button">Buy now</button>
-              <a class="button-secondary" href="#how-it-made-section">How it’s made</a>
-              <a class="scroll-down" href=""
+              <a class="button-secondary" href="#how-it-made-section"
+                >How it’s made</a
+              >
+              <a class="scroll-down" href="#scroll-down"
                 >scroll down
                 <div class="arrow-box">
                   <svg width="22" height="22">
@@ -256,14 +266,15 @@
       </section>
 
       <!-- how it's made section -->
-      <section id="how-it-made-section" class="made-section">
+      <section class="made-section" id="how-it-made-section">
         <div class="container">
           <h2 class="made-title">
             How it’s <span class="made-accent">made?</span>
           </h2>
           <div class="made-inner">
             <div class="made-video">
-              <img class="video-preview"
+              <img
+                class="video-preview"
                 src="./images/bg/video-bg.jpg"
                 alt="video preview"
                 width="600"
@@ -275,8 +286,8 @@
             </div>
             <div class="made-content">
               <h3 class="content-title">
-                Try our chocolates today and <br> discover the perfect balance of
-                flavor
+                Try our chocolates today and <br />
+                discover the perfect balance of flavor
               </h3>
               <ul class="content-list">
                 <li class="content-list-item">
@@ -303,56 +314,255 @@
           </div>
         </div>
       </section>
+
       <!-- our products section -->
-      <section>
-        <h2>Our products</h2>
-        <ul>
-          <li>
-            <img
-              src="./images/products/orange.jpg"
-              alt="orange chocolate"
-              width="230"
-              height="201"
-            />
-            <h3>Orange</h3>
-            <p>Dark chocolate</p>
-            <button type="button">45 UAH</button>
-          </li>
-          <li>
-            <img
-              src="./images/products/apple-cranberry.jpg"
-              alt="apple and cranberry chocolate"
-              width="230"
-              height="201"
-            />
-            <h3>Apple&cranberry</h3>
-            <p>Milk chocolate</p>
-            <button type="button">50 UAH</button>
-          </li>
-          <li>
-            <img
-              src="./images/products/lime-salt.jpg"
-              alt="lime and sea salt chocolate"
-              width="230"
-              height="201"
-            />
-            <h3>Lime&sea salt</h3>
-            <p>Dark chocolate</p>
-            <button type="button">66 UAH</button>
-          </li>
-          <li>
-            <img
-              src="./images/products/pineapple.jpg"
-              alt="pineapple chocolate"
-              width="230"
-              height="201"
-            />
-            <h3>Pineapple</h3>
-            <p>Dark chocolate</p>
-            <button type="button">54 UAH</button>
-          </li>
-        </ul>
+      <section class="products-section" id="our-products-section">
+        <div class="container">
+          <h2 class="products-title">
+            Our <span class="products-accent">products</span>
+          </h2>
+          <ul class="products-list">
+            <li class="products-item">
+              <article class="products-card">
+                <img
+                  src="./images/products/orange.webp"
+                  alt="orange chocolate"
+                  width="230"
+                  height="201"
+                />
+                <h3 class="product-name">Orange</h3>
+                <p class="product-description">Dark chocolate</p>
+                <button class="product-button" type="button">45 uah</button>
+              </article>
+            </li>
+            <li class="products-item">
+              <article class="products-card">
+                <img
+                  src="./images/products/apple.webp"
+                  alt="apple and cranberry chocolate"
+                  width="230"
+                  height="201"
+                />
+                <h3 class="product-name">Apple&cranberry</h3>
+                <p class="product-description">Milk chocolate</p>
+                <button class="product-button" type="button">50 uah</button>
+              </article>
+            </li>
+            <li class="products-item">
+              <article class="products-card">
+                <img
+                  src="./images/products/lime.webp"
+                  alt="lime and sea salt chocolate"
+                  width="230"
+                  height="201"
+                />
+                <h3 class="product-name">Lime&sea salt</h3>
+                <p class="product-description">Dark chocolate</p>
+                <button class="product-button" type="button">66 uah</button>
+              </article>
+            </li>
+            <li class="products-item">
+              <article class="products-card">
+                <img
+                  src="./images/products/pineapple.webp"
+                  alt="pineapple chocolate"
+                  width="230"
+                  height="201"
+                />
+                <h3 class="product-name">Pineapple</h3>
+                <p class="product-description">Dark chocolate</p>
+                <button class="product-button" type="button">54 uah</button>
+              </article>
+            </li>
+          </ul>
+          <!-- scroll bar -->
+        </div>
+      </section>
+
+      <!-- top sellers section -->
+      <section class="sellers-section" id="top-sellers-section">
+        <div class="container">
+          <h2 class="sellers-title">
+            Top <span class="sellers-accent">Sellers</span>
+          </h2>
+          <ul class="sellers-list">
+            <li class="sellers-item">
+              <img
+                class="sellers-photo"
+                src="./images/sellers/hazelnuts.jpg"
+                alt="hazelnuts chocolate"
+                width="368"
+                height="464"
+              />
+            </li>
+            <li class="sellers-item">
+              <img
+                class="sellers-photo"
+                src="./images/sellers/caramel.jpg"
+                alt="caramel chocolate"
+                width="368"
+                height="464"
+              />
+            </li>
+            <li class="sellers-item">
+              <img
+                class="sellers-photo"
+                src="./images/sellers/dark.jpg"
+                alt="dark chocolate"
+                width="368"
+                height="464"
+              />
+            </li>
+          </ul>
+          <div class="sellers-flex">
+            <p class="sellers-text">
+              Crazy enough chocolate originates from a bean just like the coffee
+              bean called Cacao. Cacao has been around for thousands of years
+              and was first discovered by the Native American tribe called the
+              Mayans.
+            </p>
+            <button class="button-seller" type="button">Buy now</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- reviews section -->
+      <section class="reviews-section" id="chocolate-is-loved-section">
+        <div class="container">
+          <h2 class="reviews-title">
+            Chocolate <span class="reviews-accent">is loved</span>
+          </h2>
+          <ul class="reviews-list">
+            <li class="reviews-list-item">
+              <article class="reviews-item">
+                <img
+                  class="review-photo"
+                  src="./images/reviews/victoria.webp"
+                  alt="Victoria Dobrzhanska"
+                  width="80"
+                  height="80"
+                />
+                <h3 class="review-name">Victoria Dobrzhanska</h3>
+                <p class="review-text">
+                  I love this chocolate bar. Perfect combination of light crispy
+                  wafer, covered in a thin layer chocolate.
+                </p>
+              </article>
+            </li>
+            <li class="reviews-list-item">
+              <article class="reviews-item">
+                <img
+                  class="review-photo"
+                  src="./images/reviews/nazar.webp"
+                  alt="Nazar Babenko"
+                  width="80"
+                  height="80"
+                />
+                <h3 class="review-name">Nazar Babenko</h3>
+                <p class="review-text">
+                  This chocolate confection is a delight! A delight! The wafer
+                  is light and crisp, the hazelnut cream is smooth, and the
+                  chocolate is good.
+                </p>
+              </article>
+            </li>
+            <li class="reviews-list-item">
+              <article class="reviews-item">
+                <img
+                  class="review-photo"
+                  src="./images/reviews/olena.webp"
+                  alt="Olena Kampusch"
+                  width="80"
+                  height="80"
+                />
+                <h3 class="review-name">Olena Kampusch</h3>
+                <p class="review-text">
+                  Chocolate is a family favourite treat. Love the delicious
+                  smooth chocolate and the creaminess inside. The wafer is soft
+                  but crunchy.
+                </p>
+              </article>
+            </li>
+          </ul>
+          <!-- scroll bar -->
+          <button class="review-button" type="button">Leave a review</button>
+        </div>
+      </section>
+
+      <!-- subscribe section -->
+      <section class="subscribe-section" id="scroll-down">
+        <div class="container">
+          <div class="subscribe-inner">
+            <h2 class="subscribe-title">Explore our new chocolate first</h2>
+            <p class="subscribe-text">
+              From the velvety texture to the rich and complex flavor, our New
+              Chocolate is a true indulgence that will leave you craving more.
+              Made with only the finest ingredients and handcrafted with the
+              utmost care, each piece is a work of art that is sure to please.
+            </p>
+            <button class="subscribe-button" type="button">Subscribe</button>
+          </div>
+        </div>
       </section>
     </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner">
+          <h2 class="footer-title">Chocolate <span class="footer-accent">a delicious cure for a bad day</span></h2>
+          <div class="footer-contact">
+            <p class="footer-text">Contact us</p>
+            <address >
+              <ul>
+                <li>
+                  <a class="footer-address" href="tel:+380684439426">+380 (68) 443-94-26</a>
+                </li>
+                <li>
+                  <a class="footer-address" href="mailto:simplychoc@gmail.com">simplychoc@gmail.com</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-links">
+            <a class="footer-link" href="">
+              <svg width="24" height="24">
+                <use href="./images/icons/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+            <a class="footer-link" href="">
+              <svg width="24" height="24">
+                <use href="./images/icons/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <ul class="footer-nav-list">
+          <li>
+            <a class="footer-nav-link" href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="footer-nav-link" href="#how-it-made-section"
+              >How it’s made?</a
+            >
+          </li>
+          <li>
+            <a class="footer-nav-link" href="#our-products-section"
+              >Our products</a
+            >
+          </li>
+          <li>
+            <a class="footer-nav-link" href="#top-sellers-section"
+              >Top sellers</a
+            >
+          </li>
+          <li>
+            <a class="footer-nav-link" href="#chocolate-is-loved-section"
+              >Chocolate is loved</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,13 +1,16 @@
 :root {
   --c-black: #111;
+  --c-black-tr10: #1111111a;
   --c-white: #fff;
   --c-dark: #1e1823;
   --c-white-tr: #ffffffb3;
   --c-brand: #fd9222;
   --c-brand-act: #fcf1e0;
-  --c-bg: #F5F4F4;
-  --c-ellipse: #4C4C4C;
-  --c-ell-border: #ECEDED;
+  --c-bg: #f5f4f4;
+  --c-ellipse: #4c4c4c;
+  --c-ell-border: #eceded;
+  --c-gray-button: #fafafa;
+  --c-shadow: #d7e4f940;
 }
 
 html {
@@ -483,10 +486,6 @@ img {
   max-width: 350px;
 }
 
-.content-list {
-  
-}
-
 .content-list-item {
   line-height: 1.28em;
   letter-spacing: 0.02rem;
@@ -510,5 +509,330 @@ img {
   background-color: var(--c-ellipse);
   border-radius: 50%;
 }
-
 /* end it's made section */
+
+/* our products section */
+
+.products-section {
+  padding: 64px 0;
+}
+
+.products-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.16em;
+  letter-spacing: 0.03rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.products-accent {
+  color: var(--c-brand);
+}
+
+.products-list {
+  display: flex;
+  gap: 18px;
+}
+
+.products-item {
+  flex-basis: calc((100%-54px) / 4);
+}
+
+.products-card {
+  background-color: var(--c-white);
+  padding: 32px 20px;
+  border: 1px solid var(--c-black-tr10);
+  border-radius: 15px;
+}
+
+.product-name {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33em;
+  letter-spacing: 0.02rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.product-description {
+  font-size: 12px;
+  line-height: 1.16em;
+  letter-spacing: 0.02rem;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.product-button {
+  display: block;
+  margin: 0 auto;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.33em;
+  padding: 8px 20px;
+  border-radius: 100px;
+  background-color: var(--c-gray-button);
+  border: 1px solid var(--c-black-tr10);
+  text-transform: uppercase;
+}
+/* end our products section */
+
+/* top sellers section */
+.sellers-section {
+  padding: 64px 0;
+}
+
+.sellers-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.16em;
+  letter-spacing: 0.03rem;
+  text-transform: uppercase;
+  color: var(--c-brand);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.sellers-accent {
+  color: var(--c-black);
+}
+
+.sellers-list {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.sellers-item {
+  flex-basis: calc((100%-32px) / 3);
+}
+
+.sellers-photo {
+  border-radius: 15px;
+}
+
+.sellers-flex {
+  display: flex;
+  align-items: baseline;
+}
+
+.sellers-text {
+  line-height: 1.28em;
+  letter-spacing: 0.02rem;
+  max-width: 407px;
+}
+
+.button-seller {
+  margin-left: auto;
+  background-color: var(--c-brand);
+  color: var(--c-white);
+  font-family: "Montserrat" sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 14px 40px;
+  border-radius: 100px;
+  border: none;
+}
+
+.button-seller:hover {
+  color: var(--c-brand);
+  background-color: var(--c-brand-act);
+}
+
+/* end top sellers section */
+
+/* reviews section */
+
+.reviews-section {
+  padding: 64px 0 128px;
+}
+.reviews-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.16em;
+  letter-spacing: 0.03rem;
+  text-transform: uppercase;
+  color: var(--c-brand);
+  text-align: center;
+  margin-bottom: 91px;
+}
+
+.reviews-accent {
+  color: var(--c-black);
+}
+
+.reviews-list {
+  display: flex;
+  gap: 28px;
+  margin-bottom: 32px;
+}
+.reviews-list-item {
+  flex-basis: calc((100%-56px) / 3);
+  max-width: 360px;
+  position: relative;
+}
+
+.reviews-item {
+  background-color: var(--c-white);
+  border: 1px solid var(--c-black-tr10);
+  padding-top: 56px;
+  padding-left: 24px;
+  padding-right: 24px;
+  min-height: 200px;
+  border-radius: 15px;
+  box-shadow: 0px 9px 26px 0px var(--c-shadow);
+}
+
+.review-photo {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+.review-name {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33em;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.review-text {
+  line-height: 1.28em;
+  letter-spacing: 0.02rem;
+  text-align: center;
+}
+
+.review-button {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.18em;
+  padding: 14px 40px;
+  border: 1px solid var(--c-brand);
+  border-radius: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+.review-button:hover {
+  background-color: var(--c-brand);
+  color: var(--c-white);
+}
+/* end reviews section */
+
+/* subscribe section */
+
+.subscribe-section {
+}
+
+.subscribe-inner {
+  padding: 72px;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url(../images/bg/subscribe-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 1200px;
+}
+.subscribe-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.16em;
+  letter-spacing: 0.03rem;
+  text-transform: uppercase;
+  color: var(--c-white);
+  text-align: center;
+  max-width: 378px;
+  margin: 0 auto 24px;
+}
+
+.subscribe-text {
+  line-height: 1.28em;
+  letter-spacing: 0.02rem;
+  color: var(--c-white);
+  text-align: center;
+  max-width: 467px;
+  margin: 0 auto 24px;
+}
+
+.subscribe-button {
+  background-color: var(--c-brand);
+  color: var(--c-white);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.18em;
+  padding: 14px 40px;
+  border-radius: 100px;
+  display: block;
+  margin: 0 auto;
+  border: none;
+}
+
+.subscribe-button:hover {
+  color: var(--c-brand);
+  background-color: var(--c-brand-act);
+}
+/* end subscribe section */
+
+/* footer */
+
+.footer {
+  background-color: var(--c-dark);
+  padding: 50px 32px;
+}
+
+.footer-inner {
+  display: flex;
+  gap: 63px;
+}
+
+.footer-title {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.21em;
+  letter-spacing: 0.02rem;
+  color: var(--c-brand);
+  max-width: 300px;
+}
+
+.footer-contact {
+  margin-left: auto;
+}
+
+.footer-accent {
+  color: var(--c-white);
+}
+
+.footer-text {
+  font-weight: 500;
+  line-height: 1.28em;
+  color: var(--c-white);
+  margin-bottom: 14px;
+}
+
+.footer-address {
+  line-height: 1.28em;
+  letter-spacing: 0.02rem;
+  color: var(--c-white);
+  font-style: normal;
+}
+
+.footer-links {
+  display: flex;
+  gap: 18px;
+}
+
+.footer-link {
+  fill: none;
+  stroke: var(--c-white);
+}
