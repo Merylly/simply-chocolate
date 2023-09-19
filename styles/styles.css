@@ -728,6 +728,7 @@ img {
 /* subscribe section */
 
 .subscribe-section {
+  padding: 0;
 }
 
 .subscribe-inner {
@@ -794,6 +795,8 @@ img {
 .footer-inner {
   display: flex;
   gap: 63px;
+  padding-bottom: 62px;
+  border-bottom: 1px solid var(--c-white-tr);
 }
 
 .footer-title {
@@ -825,6 +828,7 @@ img {
   letter-spacing: 0.02rem;
   color: var(--c-white);
   font-style: normal;
+  margin-bottom: 4px;
 }
 
 .footer-links {
@@ -835,4 +839,18 @@ img {
 .footer-link {
   fill: none;
   stroke: var(--c-white);
+}
+
+.footer-nav-list {
+  margin-top: 24px;
+  display: flex;
+  gap: 24px;
+  justify-content: flex-start;
+}
+
+.footer-nav-link {
+  font-weight: 500;
+  line-height: 1.14em;
+  letter-spacing: 0.02rem;
+  color: var(--c-white);
 }
