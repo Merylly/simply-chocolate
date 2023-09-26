@@ -714,6 +714,7 @@ img {
   line-height: 1.18em;
   padding: 14px 40px;
   border: 1px solid var(--c-brand);
+  background-color: var(--c-white);
   border-radius: 100px;
   display: block;
   margin: 0 auto;
